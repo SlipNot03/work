@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+long long factorial(int n) {
+    if (n == 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    cout << factorial(n);
+
+    return 0;
+}
+
+/*
+Пример входных данных:
+10
+
+Пример выходных данных:
+3628800
+
+Сложность:
+по времени: O(n);
+по памяти: O(n), потому что рекурсивные вызовы хранятся в стеке.
+*/

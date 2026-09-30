@@ -1,0 +1,13 @@
+source "https://rubygems.org"
+
+# Specify your gem's dependencies in start_by_ruby.gemspec
+# gemspec
+# 
+gem 'sinatra'
+gem 'sinatra-contrib' # Для перезагрузки кода (reloader)
+gem 'rack-contrib'    # Чтобы удобно читать входящий JSON
+gem 'sequel'
+gem 'pg'
+gem 'puma'
+gem 'json'
+gem 'dotenv'

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Салон красоты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Beauty Studio</a>
+
+        <nav>
+            <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#booking">Запись</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <a href="tel:+79990000000">+7 999 000-00-00</a>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Салон красоты в центре города</h1>
+            <p>Стрижки, окрашивание, уход и макияж от опытных мастеров.</p>
+            <a href="#booking">Записаться на услугу</a>
+        </section>
+
+        <section id="advantages">
+            <h2>Почему выбирают нас</h2>
+
+            <ul>
+                <li>Опытные мастера с портфолио работ</li>
+                <li>Удобная запись онлайн и по телефону</li>
+                <li>Качественные материалы и аккуратный сервис</li>
+            </ul>
+        </section>
+
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <div class="services-list">
+                <article>
+                    <h3>Стрижка</h3>
+                    <p>Женская и мужская стрижка с учетом формы лица и стиля.</p>
+                    <p>от 1500 ₽</p>
+                </article>
+
+                <article>
+                    <h3>Окрашивание</h3>
+                    <p>Тонирование, сложное окрашивание и восстановление волос.</p>
+                    <p>от 3500 ₽</p>
+                </article>
+
+                <article>
+                    <h3>Макияж</h3>
+                    <p>Дневной, вечерний и свадебный макияж.</p>
+                    <p>от 2500 ₽</p>
+                </article>
+            </div>
+        </section> 
+
+        <section id="booking">
+            <h2>Записаться на услугу</h2>
+
+            <form action="#" method="post">
+                <label for="name">Ваше имя</label>
+                <input id="name" type="text" name="name" placeholder="Анна">
+
+                <label for="phone">Телефон</label>
+                <input id="phone" type="tel" name="phone" placeholder="+7 999 000-00-00">
+
+                <label for="email">Почта</label>
+                <input id="email" type="email" name="email" placeholder="example@mail.ru">
+                
+                <label for="booking-date">Дата записи</label>
+                <input id="booking-date" type="date" name="booking_date">
+
+                <label for="service">Выберите услугу</label>
+                <select id="service" name="service">
+                <option value="haircut">Стрижка</option>
+                <option value="coloring">Окрашивание</option>
+                <option value="makeup">Макияж</option>
+                </select>
+
+                <label for="comment">Комментарий</label>
+                <textarea id="comment" name="comment" placeholder="Например: хочу записаться на вечер"></textarea>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <p>Beauty Studio</p>
+        <p>Адрес: Иркутск, ул. Ленина, 10</p>
+        <p>Телефон: <a href="tel:+79990000000">+7 999 000-00-00</a></p>
+    </footer>
+   
+</body>
+</html>

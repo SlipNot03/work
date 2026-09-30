@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, "Helvetica Neue", sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --color-studio-bg: #FAF8F5;
+  --color-studio-text: #1A1D1C;
+  --color-studio-sage: #8A9A86;
+  --color-studio-dark-sage: #2E3A2F;
+  --color-studio-terracotta: #BF8F73;
+  --color-studio-light-grey: #DFE3DD;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: var(--color-studio-bg);
+    color: var(--color-studio-text);
+    overflow-x: hidden;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  input,
+  select,
+  textarea {
+    min-width: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E3A2F;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8A9A86;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.18s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@layer components {
+  .form-select-dark,
+  .form-select-light {
+    width: 100%;
+    min-width: 0;
+    height: 46px;
+    border-radius: 0.25rem;
+    padding: 0 2.5rem 0 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0;
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    appearance: none;
+    background-image:
+      linear-gradient(45deg, transparent 50%, currentColor 50%),
+      linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position:
+      calc(100% - 18px) 50%,
+      calc(100% - 12px) 50%;
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+  }
+
+  .form-select-dark {
+    border: 1px solid rgb(255 255 255 / 0.15);
+    background-color: #1A1D1C;
+    color: rgb(255 255 255 / 0.6);
+  }
+
+  .form-select-dark:focus {
+    border-color: #8A9A86;
+  }
+
+  .form-select-light {
+    border: 1px solid rgb(26 29 28 / 0.1);
+    background-color: rgb(26 29 28 / 0.05);
+    color: #1A1D1C;
+  }
+
+  .form-select-light:focus {
+    border-color: #2E3A2F;
+    background-color: #FFFFFF;
+  }
+
+  .form-select-dark option {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    color: rgb(255 255 255 / 0.6);
+    background-color: #1A1D1C;
+  }
+
+  .form-select-light option {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    color: #1A1D1C;
+    background-color: #FAF8F5;
+  }
+}

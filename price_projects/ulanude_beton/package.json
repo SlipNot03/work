@@ -1,0 +1,22 @@
+{
+  "name": "ulanude-beton-vue",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "cms": "decap-server",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "three": "^0.185.1",
+    "vite": "^6.3.5",
+    "vue": "^3.5.17",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "decap-server": "^3.9.1"
+  }
+}

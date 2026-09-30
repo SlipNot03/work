@@ -1,0 +1,3 @@
+GET http://zorik.local/api/employees/all
+Accept: application/json
+Content-Type: application/json

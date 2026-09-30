@@ -1,0 +1,182 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/assets/uploads
+public_folder: /assets/uploads
+
+locale: ru
+
+collections:
+  - name: site
+    label: Контент сайта
+    files:
+      - name: content
+        label: Основной контент
+        file: src/content/site.json
+        format: json
+        fields:
+          - label: Навигация
+            name: navigationPages
+            widget: list
+            fields:
+              - { label: ID страницы, name: id, widget: string }
+              - { label: Название, name: label, widget: string }
+
+          - label: Компания
+            name: company
+            widget: object
+            fields:
+              - { label: Название, name: name, widget: string }
+              - { label: Короткое название, name: shortName, widget: string }
+              - { label: Телефон, name: phone, widget: string, required: false }
+              - { label: Ссылка телефона, name: phoneHref, widget: string, required: false }
+              - { label: Email, name: email, widget: string, required: false }
+              - { label: Ссылка email, name: emailHref, widget: string, required: false }
+              - { label: Адрес, name: address, widget: string }
+
+          - label: Товары
+            name: products
+            widget: list
+            fields:
+              - { label: Название, name: title, widget: string }
+              - { label: Категория, name: category, widget: string }
+              - { label: Назначение, name: purpose, widget: text }
+              - { label: Размер, name: size, widget: string }
+              - { label: Плотность, name: density, widget: string }
+              - { label: Прочность, name: strength, widget: string }
+              - { label: Морозостойкость, name: frost, widget: string }
+              - { label: Цена для калькулятора, name: priceValue, widget: number, value_type: int }
+              - { label: Цена на сайте, name: price, widget: string }
+              - { label: Наличие, name: inStock, widget: string }
+              - { label: Картинка, name: image, widget: image }
+
+          - label: Таблицы заказа
+            name: orderRows
+            widget: list
+            fields:
+              - { label: Группа, name: group, widget: string }
+              - label: Строки
+                name: rows
+                widget: list
+                fields:
+                  - { label: Размер, name: size, widget: string }
+                  - { label: Штук на паллете, name: palletPieces, widget: number, value_type: int }
+                  - { label: Объем паллеты, name: palletVolume, widget: string }
+                  - { label: Плотность, name: density, widget: string }
+                  - { label: Цена, name: price, widget: string }
+
+          - label: Фильтры каталога
+            name: productFilters
+            widget: object
+            fields:
+              - { label: Категории, name: categories, widget: list, field: { label: Категория, name: item, widget: string } }
+              - { label: Плотности, name: densities, widget: list, field: { label: Плотность, name: item, widget: string } }
+
+          - { label: Факты в первом экране, name: heroFeatures, widget: list, field: { label: Факт, name: item, widget: string } }
+
+          - label: Актуальное для заказа
+            name: promoCards
+            widget: list
+            fields:
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Текст, name: text, widget: text }
+              - { label: Картинка, name: image, widget: image }
+
+          - label: Метрики
+            name: metrics
+            widget: list
+            fields:
+              - { label: Значение, name: value, widget: string }
+              - { label: Подпись, name: label, widget: string }
+
+          - label: Преимущества
+            name: advantages
+            widget: list
+            fields:
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Текст, name: text, widget: text }
+
+          - label: Этапы работы
+            name: workflowSteps
+            widget: list
+            fields:
+              - { label: Номер, name: number, widget: string }
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Текст, name: text, widget: text }
+
+          - label: Показатели производства
+            name: productionStats
+            widget: list
+            fields:
+              - { label: Значение, name: value, widget: string }
+              - { label: Подпись, name: label, widget: string }
+
+          - label: Свойства блоков
+            name: blockBenefits
+            widget: list
+            fields:
+              - { label: Номер, name: number, widget: string }
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Текст, name: text, widget: text }
+
+          - label: Этапы доставки
+            name: deliverySteps
+            widget: list
+            fields:
+              - { label: Номер, name: number, widget: string }
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Текст, name: text, widget: text }
+
+          - label: Условия доставки
+            name: deliveryTerms
+            widget: list
+            fields:
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Текст, name: text, widget: text }
+
+          - label: Зоны доставки
+            name: deliveryZones
+            widget: list
+            fields:
+              - { label: Зона, name: zone, widget: string }
+              - { label: Расстояние, name: distance, widget: string }
+              - { label: Транспорт, name: vehicle, widget: string }
+              - { label: Условия, name: terms, widget: text }
+
+          - { label: Где купить, name: dealers, widget: list, field: { label: Точка, name: item, widget: string } }
+
+          - label: Документы
+            name: documents
+            widget: list
+            fields:
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Текст, name: text, widget: text }
+
+          - label: FAQ
+            name: faqItems
+            widget: list
+            fields:
+              - { label: Вопрос, name: question, widget: string }
+              - { label: Ответ, name: answer, widget: text }
+
+          - label: Квиз заявки
+            name: quoteQuestions
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Вопрос, name: label, widget: string }
+              - { label: Варианты, name: options, widget: list, field: { label: Вариант, name: item, widget: string } }
+
+          - label: Способы связи
+            name: contactMethods
+            widget: list
+            fields:
+              - { label: Название, name: title, widget: string }
+              - { label: Значение, name: value, widget: string }
+              - { label: Ссылка, name: href, widget: string, required: false }
+
+          - { label: Оплата и реквизиты, name: requisites, widget: list, field: { label: Пункт, name: item, widget: string } }
+          - { label: Ссылка на Яндекс.Карту, name: yandexMapUrl, widget: string }

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Производственная площадка</title>
+  <desc id="desc">Складская площадка с цехом, блоками газобетона и погрузчиком.</desc>
+  <rect width="1200" height="900" fill="#d8e6ec"/>
+  <path d="M0 590h1200v310H0z" fill="#c3ccd1"/>
+  <g fill="#fff" stroke="#2e3338" stroke-width="10">
+    <path d="M120 350h360v280H120z"/>
+    <path d="M480 430h260v200H480z"/>
+    <path d="M105 350l195-120 200 120z" fill="#f28c00"/>
+    <rect x="190" y="455" width="125" height="175" fill="#d7dce0"/>
+    <rect x="545" y="492" width="125" height="138" fill="#d7dce0"/>
+  </g>
+  <g stroke="#2e3338" stroke-width="8" fill="#eef0f2">
+    <rect x="805" y="445" width="112" height="58"/>
+    <rect x="917" y="445" width="112" height="58"/>
+    <rect x="805" y="503" width="112" height="58"/>
+    <rect x="917" y="503" width="112" height="58"/>
+    <rect x="805" y="561" width="112" height="58"/>
+    <rect x="917" y="561" width="112" height="58"/>
+  </g>
+  <g fill="#f28c00" stroke="#2e3338" stroke-width="8">
+    <rect x="690" y="650" width="230" height="72" rx="8"/>
+    <path d="M780 650h112l-36-70h-76z"/>
+    <path d="M908 672h105"/>
+    <circle cx="740" cy="744" r="30"/>
+    <circle cx="880" cy="744" r="30"/>
+  </g>
+  <g fill="#2e3338" opacity=".65">
+    <rect x="65" y="695" width="1020" height="14"/>
+    <rect x="110" y="760" width="680" height="14"/>
+  </g>
+</svg>

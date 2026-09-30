@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f1f4;
+  color: #2d2d2d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  gap: 24px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eadde3;
+}
+header > a:first-child {
+  font-weight: 700;
+  font-size: 22px;
+}
+header > a:last-child {
+  color: #b24b6f;
+  font-weight: 700;
+}
+
+header,
+main section,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+#hero {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+#hero p {
+  margin: 0 0 32px;
+  font-size: 20px;
+  color: #6f5f66;
+}
+
+#hero a {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #b24b6f;
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
+#advantages {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+#advantages h2,
+#services h2,
+#booking h2 {
+  margin: 0 0 24px;
+  font-size: 32px;
+}
+
+#advantages ul {
+  display: flex;
+  gap: 20px;
+}
+
+#advantages li {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f1f4;
+  border: 1px solid #eadde3;
+  border-radius: 6px;
+}
+
+#services {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+#services article {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #eadde3;
+  border-radius: 8px;
+}
+
+#services h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+#services article p {
+  margin: 0 0 12px;
+  color: #6f5f66;
+}
+
+#services article p:last-child {
+  margin-bottom: 0;
+  color: #b24b6f;
+  font-weight: 700;
+}
+#booking {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+#booking form {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+#booking label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+#booking input,
+#booking select,
+#booking textarea {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #d8c8cf;
+  border-radius: 6px;
+  font: inherit;
+}
+
+#booking textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#booking button {
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 6px;
+  background-color: #b24b6f;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+footer {
+  color: #6f5f66;
+  border-top: 1px solid #eadde3;
+}
+
+footer p {
+  margin: 0 0 8px;
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #b24b6f;
+  font-weight: 700;
+}
+
+main section {
+  margin-top: 32px;
+}
+
+.services-list {
+  display: flex;
+  gap: 20px;
+}
+
+.services-list article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+#hero a:hover,
+#booking button:hover {
+  background-color: #963e5d;
+}
+
+nav a {
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #b24b6f;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #b24b6f;
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  header,
+  main section,
+  footer {
+    padding: 20px;
+  }
+
+  #advantages h2,
+  #services h2,
+  #booking h2 {
+    font-size: 28px;
+  }
+
+  #hero {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #advantages ul,
+  .services-list {
+    flex-direction: column;
+  }
+
+  #advantages li,
+  .services-list article {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 30px;
+  }
+
+  #hero p {
+    font-size: 18px;
+  }
+
+  #hero a,
+  #booking button {
+    width: 100%;
+    text-align: center;
+  }
+}

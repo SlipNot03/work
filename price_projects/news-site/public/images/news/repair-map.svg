@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#efede7"/>
+  <path d="M120 165h960M120 330h960M120 495h960M250 80v590M510 80v590M770 80v590M1010 80v590" stroke="#d24b2a" stroke-width="3" opacity=".7"/>
+  <path d="M190 560l260-185 210 80 350-260" fill="none" stroke="#111" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="190" cy="560" r="44" fill="#d24b2a"/>
+  <circle cx="450" cy="375" r="44" fill="#d24b2a"/>
+  <circle cx="660" cy="455" r="44" fill="#d24b2a"/>
+  <circle cx="1010" cy="195" r="44" fill="#d24b2a"/>
+  <text x="110" y="105" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111">REPAIR MAP</text>
+</svg>

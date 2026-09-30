@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECNG Invoicing | Get paid in crypto, settle in EUR</title>
+    <meta name="description" content="B2B fintech invoicing service. Accept crypto payments (USDT) from clients and settle in EUR. Eliminate volatility, automate accounting, and scale your global business.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ECNG Invoicing | Get paid in crypto, settle in EUR">
+    <meta property="og:description" content="Eliminate crypto volatility for your business. Accept USDT, receive EUR. Premium B2B invoicing infrastructure.">
+    <meta property="og:image" content="assets/og-image.svg">
+    <meta property="og:url" content="https://ecng invoicing.com">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo" aria-label="ECNG Invoicing">
+                <span class="ecng-wordmark" aria-hidden="true">
+                    <span class="ecng-letter">E</span>
+                    <span class="ecng-ring"></span>
+                    <span class="ecng-letter ecng-n">N</span>
+                    <span class="ecng-letter">G</span>
+                </span>
+                <span class="logo-product">Invoicing</span>
+            </a>
+            <nav class="nav">
+                <a href="#problem">Problem</a>
+                <a href="#how">How it works</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="https://t.me/business_finoreo" class="btn btn--primary" onclick="trackEvent('cta_click', {location: 'header'})" target="_blank" rel="noopener">
+                Get in touch
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <span class="tag">Crypto invoicing for business</span>
+                <h1 class="hero__title">A client owes you <br>&euro;100,000. <br><span class="text-gradient">How many steps</span> from "owed" to "received"?</h1>
+                <p class="hero__subtitle">
+                    <strong>With ECNG, just two.</strong> Create an invoice. Send a link.<br>
+                    Your client pays in crypto &mdash; you get the exact amount in EUR.
+                </p>
+                <div class="hero__cta">
+                    <a href="https://t.me/business_finoreo" class="btn btn--primary btn--large" onclick="trackEvent('cta_click', {location: 'hero_primary'})" target="_blank" rel="noopener">
+                        Get started
+                    </a>
+                    <a href="#how" class="btn btn--ghost btn--large">How it works</a>
+                </div>
+            </div>
+
+            <!-- Floating Glass Dashboard -->
+            <div class="dashboard-mockup">
+                <div class="glass-card dashboard__card">
+                    <div class="dashboard__header">
+                        <div class="dashboard__dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="dashboard__title">ECNG Terminal</span>
+                    </div>
+                    <div class="dashboard__body">
+                        <div class="dash-row">
+                            <div class="dash-label">Invoice #INV-2401</div>
+                            <div class="dash-value">100,000 <span class="muted">EUR</span></div>
+                        </div>
+                        <div class="dash-progress">
+                            <div class="dash-progress-bar"></div>
+                        </div>
+                        <div class="dash-status">
+                            <span class="status-dot pulse"></span>
+                            Paid
+                        </div>
+                        <div class="dash-row dash-row--highlight">
+                            <div class="dash-label">Paid in</div>
+                            <div class="dash-value">USDT <span class="accent">114,686.13</span></div>
+                        </div>
+                        <div class="sparkline">
+                            <svg width="100%" height="40" viewBox="0 0 300 40" preserveAspectRatio="none">
+                                <path d="M0,30 L50,20 L100,25 L150,10 L200,15 L250,5 L300,12" fill="none" stroke="#00F0B5" stroke-width="2" />
+                                <path d="M0,30 L50,20 L100,25 L150,10 L200,15 L250,5 L300,12 V40 H0 Z" fill="url(#sparkGrad)" />
+                                <defs>
+                                    <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#00F0B5" stop-opacity="0.3"/>
+                                        <stop offset="100%" stop-color="#00F0B5" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="glow-orb glow-orb--1"></div>
+                <div class="glow-orb glow-orb--2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="section">
+        <div class="container">
+            <h2 class="section__title reveal">Right now, between the invoice and the money &mdash; <span class="text-gradient">six extra steps</span></h2>
+            <p class="section__subtitle reveal">If you accept crypto payments from clients, you almost certainly have a dedicated person &mdash; or half of your finance lead's day &mdash; tied up doing the exact same thing, over and over.</p>
+            
+            <div class="grid grid--3">
+                <div class="glass-card problem-card reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2zm0 6v6m0 4v.01"/></svg>
+                    </div>
+                    <h3>Agree the rate in chat</h3>
+                    <p>This isn't work. It's operational noise.</p>
+                </div>
+                <div class="glass-card problem-card reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z M3 9h18 M9 21V9"/></svg>
+                    </div>
+                    <h3>Wait for the USDT to land</h3>
+                    <p>And it eats time, margin, and people.</p>
+                </div>
+                <div class="glass-card problem-card reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Convert it manually</h3>
+                    <p>This isn't work. It's operational noise.</p>
+                </div>
+                <div class="glass-card problem-card reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3>Check the amount reconciles</h3>
+                    <p>And it eats time, margin, and people.</p>
+                </div>
+                <div class="glass-card problem-card reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+                    </div>
+                    <h3>Update the spreadsheet</h3>
+                    <p>This isn't work. It's operational noise.</p>
+                </div>
+                <div class="glass-card problem-card reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+                    </div>
+                    <h3>Explain why &euro;400 less showed up</h3>
+                    <p>And it eats time, margin, and people.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works Section -->
+    <section id="how" class="section section--alt">
+        <div class="container">
+            <h2 class="section__title reveal">Six steps collapse into <span class="text-gradient">two</span></h2>
+            <p class="section__subtitle reveal">You raise a EUR invoice in your dashboard. Your client pays in crypto at the live rate. After that &mdash; silence.</p>
+
+            <div class="steps-grid">
+                <div class="step-item reveal">
+                    <div class="step-num">01</div>
+                    <div class="glass-card step-card">
+                        <h3>Create the invoice</h3>
+                        <p>Enter the amount in EUR, pick the client from your address book, and choose the accepted cryptocurrencies. Ready in under a minute.</p>
+                    </div>
+                </div>
+                <div class="step-connector reveal"></div>
+                <div class="step-item reveal">
+                    <div class="step-num">02</div>
+                    <div class="glass-card step-card">
+                        <h3>Send the link</h3>
+                        <p>A public URL - no sign-up on the client's side. They open it in any messenger and pay whenever it suits them.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-cta reveal">
+                <p class="section__subtitle">Payment lifecycle &middot; automatic: Opened, Pending, Paid, Settled.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section">
+        <div class="container">
+            <h2 class="section__title reveal">Fewer tabs. Fewer people in the chain. <span class="text-gradient">Fewer points of failure.</span></h2>
+            
+            <div class="grid grid--2">
+                <div class="glass-card benefit-card reveal">
+                    <div class="card-header">
+                        <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+                        <h3>Control over fees</h3>
+                    </div>
+                    <p>You decide: you cover the fee, the client pays it as a separate line, or it's baked into the rate. Transparent or embedded &mdash; your call.</p>
+                </div>
+                <div class="glass-card benefit-card reveal">
+                    <div class="card-header">
+                        <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+                        <h3>Automatic statuses</h3>
+                    </div>
+                    <p>See whether the client opened the link, the payment's status, and exactly which stage it's at right now. No more "did it arrive?" emails.</p>
+                </div>
+                <div class="glass-card benefit-card reveal">
+                    <div class="card-header">
+                        <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <h3>One-click reconciliation</h3>
+                    </div>
+                    <p>Every transaction is tied to an account and an invoice. Export a period to CSV &mdash; and the books close themselves.</p>
+                </div>
+                <div class="glass-card benefit-card reveal">
+                    <div class="card-header">
+                        <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20 M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                        <h3>One dashboard</h3>
+                    </div>
+                    <p>Mass payouts, exchange, and invoicing &mdash; in a single dashboard. Fewer hops between services, fewer places where something can break.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who it is for Section -->
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="section__title reveal">For anyone <span class="text-gradient">tired</span> of being "the person who negotiates the rate"</h2>
+            
+            <div class="audience-grid">
+                <div class="glass-card audience-card reveal">
+                    <h3>Finance teams</h3>
+                    <p>Closing dozens or hundreds of invoices a month &mdash; and wanting each one to stop being its own little project.</p>
+                </div>
+                <div class="glass-card audience-card reveal">
+                    <h3>Operations</h3>
+                    <p>Tired of agreeing rates in chats, explaining discrepancies, and reconciling spreadsheets at the end of every week.</p>
+                </div>
+                <div class="glass-card audience-card reveal">
+                    <h3>Companies with P&amp;L ownership</h3>
+                    <p>Where the FX gap between issuing an invoice and receiving the money stops being "rounding" and turns into a line on the P&amp;L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="section section--alt">
+        <div class="container">
+            <div class="contact-cta glass-card reveal">
+                <span class="tag">Fewer tabs. Less manual work.</span>
+                <h2>Fewer points of failure.</h2>
+                <p>Message the team and get a direct answer about ECNG Invoicing.</p>
+                <a href="https://t.me/business_finoreo" class="btn btn--primary btn--large btn--glow" onclick="trackEvent('cta_click', {location: 'contact_telegram'})" target="_blank" rel="noopener">
+                    Message the team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#" class="logo" aria-label="ECNG Invoicing">
+                    <span class="ecng-wordmark" aria-hidden="true">
+                        <span class="ecng-letter">E</span>
+                        <span class="ecng-ring"></span>
+                        <span class="ecng-letter ecng-n">N</span>
+                        <span class="ecng-letter">G</span>
+                    </span>
+                    <span class="logo-product">Invoicing</span>
+                </a>
+                <p>tools.ecng.digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

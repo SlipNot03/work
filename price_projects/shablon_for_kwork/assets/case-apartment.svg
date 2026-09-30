@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Кейс ремонта квартиры">
+  <rect width="640" height="400" fill="#e9ede8"/>
+  <rect x="44" y="48" width="552" height="258" rx="8" fill="#f7f6ef"/>
+  <rect x="84" y="82" width="196" height="132" fill="#9fc9d0"/>
+  <path d="M84 154h196M182 82v132" stroke="#fff" stroke-width="8"/>
+  <rect x="330" y="92" width="196" height="28" fill="#1d7a63"/>
+  <rect x="330" y="146" width="156" height="18" fill="#c8d1c8"/>
+  <rect x="330" y="184" width="178" height="18" fill="#c8d1c8"/>
+  <rect x="330" y="238" width="112" height="38" rx="8" fill="#d5942b"/>
+  <path d="M0 304h640v96H0z" fill="#b8865e"/>
+  <path d="M70 334h218v26H70zM350 334h120v26H350z" fill="#7c5b46" opacity=".28"/>
+</svg>

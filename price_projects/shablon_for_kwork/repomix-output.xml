@@ -1,0 +1,1276 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+assets/
+  case-apartment.svg
+  case-house.svg
+  case-office.svg
+  hero-renovation.png
+  hero-renovation.svg
+index.html
+README.md
+script.js
+styles.css
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="assets/case-apartment.svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Кейс ремонта квартиры">
+  <rect width="640" height="400" fill="#e9ede8"/>
+  <rect x="44" y="48" width="552" height="258" rx="8" fill="#f7f6ef"/>
+  <rect x="84" y="82" width="196" height="132" fill="#9fc9d0"/>
+  <path d="M84 154h196M182 82v132" stroke="#fff" stroke-width="8"/>
+  <rect x="330" y="92" width="196" height="28" fill="#1d7a63"/>
+  <rect x="330" y="146" width="156" height="18" fill="#c8d1c8"/>
+  <rect x="330" y="184" width="178" height="18" fill="#c8d1c8"/>
+  <rect x="330" y="238" width="112" height="38" rx="8" fill="#d5942b"/>
+  <path d="M0 304h640v96H0z" fill="#b8865e"/>
+  <path d="M70 334h218v26H70zM350 334h120v26H350z" fill="#7c5b46" opacity=".28"/>
+</svg>
+</file>
+
+<file path="assets/case-house.svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Кейс ремонта дома">
+  <rect width="640" height="400" fill="#eef3ec"/>
+  <path d="M92 188L320 54l228 134v154H92z" fill="#fffaf0"/>
+  <path d="M64 194L320 42l256 152" fill="none" stroke="#b45f45" stroke-width="24" stroke-linejoin="round"/>
+  <rect x="142" y="218" width="112" height="124" fill="#9fc9d0"/>
+  <rect x="384" y="222" width="102" height="120" fill="#1d7a63"/>
+  <rect x="286" y="204" width="72" height="138" fill="#d5942b"/>
+  <path d="M0 342h640v58H0z" fill="#71866a"/>
+  <path d="M108 162h424" stroke="#1d2320" stroke-width="8" opacity=".12"/>
+</svg>
+</file>
+
+<file path="assets/case-office.svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Кейс коммерческой отделки">
+  <rect width="640" height="400" fill="#dfe8de"/>
+  <rect x="58" y="58" width="524" height="236" rx="8" fill="#ffffff"/>
+  <path d="M58 294h524v58H58z" fill="#376b8c"/>
+  <rect x="96" y="92" width="140" height="140" fill="#b7d7dc"/>
+  <rect x="270" y="92" width="274" height="28" fill="#1d7a63"/>
+  <rect x="270" y="148" width="226" height="18" fill="#cad5cf"/>
+  <rect x="270" y="184" width="244" height="18" fill="#cad5cf"/>
+  <rect x="270" y="230" width="128" height="42" rx="8" fill="#b45f45"/>
+  <path d="M84 352h472" stroke="#1d2320" stroke-width="8" opacity=".16"/>
+</svg>
+</file>
+
+<file path="assets/hero-renovation.svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Современный ремонт квартиры">
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f4efe5"/>
+      <stop offset="0.55" stop-color="#dfe8de"/>
+      <stop offset="1" stop-color="#c8d1c8"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#b8865e"/>
+      <stop offset="0.5" stop-color="#d7aa77"/>
+      <stop offset="1" stop-color="#986f53"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1c2924" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#20342d"/>
+  <path d="M0 0h1600v640H0z" fill="url(#wall)"/>
+  <path d="M0 640h1600v260H0z" fill="url(#floor)"/>
+  <path d="M0 640h1600" stroke="#7f6550" stroke-width="7" opacity=".45"/>
+  <path d="M134 155h420v344H134z" fill="#eef6f2" filter="url(#softShadow)"/>
+  <path d="M164 184h360v286H164z" fill="#9fc9d0"/>
+  <path d="M164 324h360" stroke="#f8fbfb" stroke-width="12"/>
+  <path d="M344 184v286" stroke="#f8fbfb" stroke-width="12"/>
+  <path d="M183 417c92-38 198-42 316-8v61H183z" fill="#7fa870" opacity=".68"/>
+  <circle cx="457" cy="231" r="44" fill="#f2c66e"/>
+  <path d="M733 147h462v408H733z" rx="6" fill="#f8f8f4" filter="url(#softShadow)"/>
+  <path d="M778 206h372v38H778z" fill="#1d7a63"/>
+  <path d="M778 287h330v22H778z" fill="#cbd6cf"/>
+  <path d="M778 333h298v22H778z" fill="#cbd6cf"/>
+  <path d="M778 379h350v22H778z" fill="#cbd6cf"/>
+  <path d="M778 446h148v52H778z" rx="8" fill="#d5942b"/>
+  <path d="M1048 590l203 80-30 76-203-80z" fill="#e7edf0" stroke="#98a9ad" stroke-width="10"/>
+  <path d="M1212 642l82 32-31 76-82-32z" fill="#1d7a63"/>
+  <g transform="translate(468 344)">
+    <path d="M178 129c46 0 80 34 80 82v216H103V211c0-48 30-82 75-82z" fill="#2f6257"/>
+    <circle cx="179" cy="72" r="55" fill="#c98b67"/>
+    <path d="M128 73c4-49 32-77 76-70 42 7 61 35 55 82-45-16-86-16-131-12z" fill="#26332e"/>
+    <path d="M77 243l-61 171 54 18 76-170z" fill="#c98b67"/>
+    <path d="M260 248l122 115-36 43-135-102z" fill="#c98b67"/>
+    <path d="M354 369l96-126" stroke="#25352f" stroke-width="16" stroke-linecap="round"/>
+    <path d="M442 230l30 23-34 46-32-24z" fill="#d5942b"/>
+    <path d="M108 427h58v189H99z" fill="#20342d"/>
+    <path d="M205 427h58v189h-67z" fill="#20342d"/>
+    <path d="M76 616h114v34H69z" fill="#18231f"/>
+    <path d="M182 616h113v34H174z" fill="#18231f"/>
+  </g>
+  <g transform="translate(1190 514)">
+    <path d="M18 98h250v142H18z" rx="10" fill="#f1ece2" filter="url(#softShadow)"/>
+    <path d="M45 127h196v19H45z" fill="#d5942b"/>
+    <path d="M45 168h156v17H45z" fill="#1d7a63"/>
+    <path d="M45 207h116v17H45z" fill="#b45f45"/>
+    <path d="M196 96h72v144h-72z" fill="#d8ddd6"/>
+  </g>
+  <path d="M1340 238h122v402h-122z" fill="#f7faf7" filter="url(#softShadow)"/>
+  <path d="M1365 260h72v334h-72z" fill="#d5942b"/>
+  <path d="M1378 290h46v274h-46z" fill="#f1e1c5"/>
+  <path d="M0 742c363-73 632-66 944 0 260 55 439 69 656 18v140H0z" fill="#2d4039" opacity=".2"/>
+</svg>
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Адаптивный квиз-лендинг для ремонта квартир и коммерческих помещений под рекламу из Яндекс Директ."
+    />
+    <title>Ремонт без пауз - квиз-лендинг под Яндекс Директ</title>
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-elevate>
+      <a class="brand" href="#top" aria-label="Ремонт без пауз">
+        <span class="brand__mark">Р</span>
+        <span>
+          <strong>Ремонт без пауз</strong>
+          <small>квартиры и помещения</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#quiz">Расчет</a>
+        <a href="#cases">Примеры</a>
+        <a href="#process">Процесс</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="header-phone js-calltracking-phone" href="tel:+73952999999">+7 3952 99-99-99</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__media" aria-hidden="true">
+          <img src="assets/hero-renovation.png" alt="" />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Лендинг под горячий спрос из Яндекс Директ</p>
+          <h1>Ремонт квартир и помещений с расчетом цены за 60 секунд</h1>
+          <p class="hero__text">
+            Квиз квалифицирует заявку по типу объекта, площади, срокам и бюджету, а затем отправляет лид в CRM и подменяет номер для коллтрекинга.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#quiz">Получить расчет</a>
+            <a class="button button--ghost" href="#cases">Смотреть примеры</a>
+          </div>
+          <dl class="hero__stats" aria-label="Ключевые показатели">
+            <div>
+              <dt>от 4,8%</dt>
+              <dd>конверсия квиза</dd>
+            </div>
+            <div>
+              <dt>2 дня</dt>
+              <dd>адаптация шаблона</dd>
+            </div>
+            <div>
+              <dt>24/7</dt>
+              <dd>передача заявок</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="trust-band" aria-label="Преимущества">
+        <div class="trust-band__item">
+          <span>01</span>
+          <strong>Заявки с квалификацией</strong>
+          <p>Менеджер сразу видит площадь, формат ремонта, бюджет и срочность.</p>
+        </div>
+        <div class="trust-band__item">
+          <span>02</span>
+          <strong>CRM и аналитика</strong>
+          <p>Готовые поля для Bitrix24, amoCRM, Roistat, Calltouch или CoMagic.</p>
+        </div>
+        <div class="trust-band__item">
+          <span>03</span>
+          <strong>Быстрая загрузка</strong>
+          <p>Статический HTML, CSS и JS без тяжелых библиотек и лишних запросов.</p>
+        </div>
+      </section>
+
+      <section class="section section--split" id="quiz">
+        <div class="section__intro">
+          <p class="eyebrow">Квиз-заявка</p>
+          <h2>Собираем данные, которые реально нужны отделу продаж</h2>
+          <p>
+            Форма ведет пользователя по короткому сценарию и показывает предварительный диапазон стоимости. После отправки заявка готова уйти в CRM.
+          </p>
+          <ul class="check-list">
+            <li>тип объекта и площадь</li>
+            <li>вид ремонта и желаемый старт</li>
+            <li>бюджет, имя, телефон</li>
+            <li>UTM-метки и источник звонка</li>
+          </ul>
+        </div>
+
+        <form class="quiz" id="leadForm" novalidate>
+          <div class="quiz__top">
+            <span class="quiz__step-label">Шаг <b id="currentStep">1</b> из 4</span>
+            <span class="quiz__result" id="estimateText">Предварительный расчет: от 0 ₽</span>
+          </div>
+          <div class="progress" aria-hidden="true">
+            <span id="progressBar"></span>
+          </div>
+
+          <fieldset class="quiz__step is-active" data-step="1">
+            <legend>Что нужно отремонтировать?</legend>
+            <label class="option-card">
+              <input type="radio" name="objectType" value="Квартира" data-factor="1" checked />
+              <span>Квартира</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="objectType" value="Дом" data-factor="1.12" />
+              <span>Дом</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="objectType" value="Коммерческое помещение" data-factor="1.18" />
+              <span>Коммерческое помещение</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz__step" data-step="2">
+            <legend>Площадь и формат работ</legend>
+            <label class="field">
+              <span>Площадь, м²</span>
+              <input type="number" name="area" min="15" max="500" value="64" required />
+            </label>
+            <label class="field">
+              <span>Тип ремонта</span>
+              <select name="repairType" required>
+                <option value="Косметический" data-price="10500">Косметический</option>
+                <option value="Капитальный" data-price="18500" selected>Капитальный</option>
+                <option value="Дизайнерский" data-price="27500">Дизайнерский</option>
+                <option value="Коммерческий" data-price="16500">Коммерческий</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz__step" data-step="3">
+            <legend>Когда хотите начать?</legend>
+            <label class="option-card">
+              <input type="radio" name="startDate" value="В течение 7 дней" data-urgency="1.06" checked />
+              <span>В течение 7 дней</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="startDate" value="В этом месяце" data-urgency="1" />
+              <span>В этом месяце</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="startDate" value="Пока сравниваю подрядчиков" data-urgency="0.96" />
+              <span>Пока сравниваю подрядчиков</span>
+            </label>
+            <label class="field">
+              <span>Ориентир по бюджету</span>
+              <select name="budget" required>
+                <option value="до 700 000 ₽">до 700 000 ₽</option>
+                <option value="700 000 - 1 500 000 ₽" selected>700 000 - 1 500 000 ₽</option>
+                <option value="1 500 000 - 3 000 000 ₽">1 500 000 - 3 000 000 ₽</option>
+                <option value="от 3 000 000 ₽">от 3 000 000 ₽</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz__step" data-step="4">
+            <legend>Куда отправить расчет?</legend>
+            <label class="field">
+              <span>Ваше имя</span>
+              <input type="text" name="name" placeholder="Например, Анна" required />
+            </label>
+            <label class="field">
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+            </label>
+            <label class="consent">
+              <input type="checkbox" name="consent" checked required />
+              <span>Согласен на обработку данных и звонок специалиста</span>
+            </label>
+          </fieldset>
+
+          <div class="quiz__controls">
+            <button class="button button--muted" type="button" id="prevStep">Назад</button>
+            <button class="button button--primary" type="button" id="nextStep">Далее</button>
+            <button class="button button--primary is-hidden" type="submit" id="submitLead">Отправить заявку</button>
+          </div>
+
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section section--muted" id="cases">
+        <div class="section__heading">
+          <p class="eyebrow">Примеры для отклика</p>
+          <h2>3 релевантных кейса, которые можно показывать клиенту</h2>
+        </div>
+        <div class="case-grid">
+          <article class="case-card">
+            <img src="assets/case-apartment.svg" alt="Квиз-лендинг ремонта квартиры" />
+            <div>
+              <span>Ремонт квартир</span>
+              <h3>Квиз под капитальный ремонт</h3>
+              <p>Конверсия заявки 5,6%, средняя цена лида ниже на 21% после разделения трафика по типам ремонта.</p>
+            </div>
+          </article>
+          <article class="case-card">
+            <img src="assets/case-office.svg" alt="Лендинг отделки офиса" />
+            <div>
+              <span>Коммерческая отделка</span>
+              <h3>Лендинг для офисов и салонов</h3>
+              <p>Конверсия 4,2%, заявки сразу попадали в amoCRM с площадью, сроком старта и UTM-метками.</p>
+            </div>
+          </article>
+          <article class="case-card">
+            <img src="assets/case-house.svg" alt="Лендинг ремонта дома" />
+            <div>
+              <span>Загородные дома</span>
+              <h3>Посадочная под ремонт коттеджей</h3>
+              <p>Конверсия 3,9%, подмена номера через коллтрекинг помогла оценить звонки из РСЯ и поиска отдельно.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--split" id="process">
+        <div class="section__intro">
+          <p class="eyebrow">Сроки и стоимость</p>
+          <h2>Готовый шаблон можно адаптировать быстро</h2>
+          <p>
+            Под нишу ремонта обычно хватает заменить оффер, фото работ, телефонию, поля CRM и тексты под город.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span>1 день</span>
+            <h3>Сборка структуры</h3>
+            <p>Первый экран, квиз, преимущества, кейсы, блок доверия, контакты.</p>
+          </div>
+          <div class="timeline__item">
+            <span>1-2 дня</span>
+            <h3>Адаптация и интеграции</h3>
+            <p>Webhook CRM, цели Метрики, подмена номера, тестирование заявок.</p>
+          </div>
+          <div class="timeline__item">
+            <span>от 25 000 ₽</span>
+            <h3>Стоимость</h3>
+            <p>Точная цена зависит от CRM, количества страниц, контента и аналитики.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contacts">
+        <div>
+          <p class="eyebrow">Заявка на расчет</p>
+          <h2>Проверьте лендинг на своем оффере</h2>
+          <p>
+            Подключите рекламные кампании, передайте UTM-метки и получайте заявки в CRM с источником, телефоном и параметрами ремонта.
+          </p>
+        </div>
+        <a class="button button--light" href="#quiz">Заполнить квиз</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Ремонт без пауз. Шаблон квиз-лендинга для рекламы.</p>
+      <p>
+        <a class="js-calltracking-phone" href="tel:+73952999999">+7 3952 99-99-99</a>
+        <span>crm-webhook: ready</span>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+</file>
+
+<file path="README.md">
+# shablon_for_kwork
+
+Статический квиз-лендинг для ниши ремонта квартир и помещений под трафик из Яндекс Директ.
+
+## Что внутри
+
+- `index.html` - структура лендинга и форма квалификации.
+- `styles.css` - адаптивная стилизация без внешних библиотек.
+- `script.js` - квиз, расчет диапазона стоимости, UTM, подмена телефона и отправка лида.
+- `assets/` - локальные визуальные материалы.
+
+## Как подключить CRM
+
+В файле `script.js` укажите URL webhook:
+
+```js
+const CRM_WEBHOOK_URL = "https://example.com/webhook";
+```
+
+Сейчас, если URL пустой, заявка не уходит наружу, а выводится в консоль браузера.
+
+## Коллтрекинг
+
+В `TRACKING_PHONES` можно заменить номера на номера Calltouch, CoMagic, Roistat или другого сервиса. Скрипт уже читает `utm_source` и `utm_medium`.
+
+## Запуск
+
+Откройте `index.html` в браузере или запустите локальный сервер из этой папки:
+
+```bash
+python3 -m http.server 8080
+```
+</file>
+
+<file path="script.js">
+const CRM_WEBHOOK_URL = "";
+const DEFAULT_PHONE = "+7 3952 99-99-99";
+const TRACKING_PHONES = {
+  yandex_search: "+7 3952 88-10-01",
+  yandex_rsy: "+7 3952 88-10-02",
+  direct: "+7 3952 88-10-03",
+};
+
+const form = document.querySelector("#leadForm");
+const steps = [...document.querySelectorAll(".quiz__step")];
+const currentStepEl = document.querySelector("#currentStep");
+const progressBar = document.querySelector("#progressBar");
+const estimateText = document.querySelector("#estimateText");
+const prevButton = document.querySelector("#prevStep");
+const nextButton = document.querySelector("#nextStep");
+const submitButton = document.querySelector("#submitLead");
+const message = document.querySelector("#formMessage");
+
+let activeStep = 0;
+
+function formatRub(value) {
+  return new Intl.NumberFormat("ru-RU", {
+    style: "currency",
+    currency: "RUB",
+    maximumFractionDigits: 0,
+  }).format(value);
+}
+
+function getSelectedOption(select) {
+  return select.options[select.selectedIndex];
+}
+
+function calculateEstimate() {
+  const data = new FormData(form);
+  const area = Number(data.get("area")) || 0;
+  const repairSelect = form.elements.repairType;
+  const price = Number(getSelectedOption(repairSelect).dataset.price || 0);
+  const objectFactor = Number(form.querySelector("[name='objectType']:checked")?.dataset.factor || 1);
+  const urgencyFactor = Number(form.querySelector("[name='startDate']:checked")?.dataset.urgency || 1);
+  const base = area * price * objectFactor * urgencyFactor;
+  const min = Math.max(0, Math.round(base * 0.92));
+  const max = Math.max(0, Math.round(base * 1.18));
+
+  estimateText.textContent = `Предварительный расчет: ${formatRub(min)} - ${formatRub(max)}`;
+}
+
+function showStep(index) {
+  activeStep = Math.min(Math.max(index, 0), steps.length - 1);
+  steps.forEach((step, stepIndex) => {
+    step.classList.toggle("is-active", stepIndex === activeStep);
+  });
+
+  currentStepEl.textContent = String(activeStep + 1);
+  progressBar.style.width = `${((activeStep + 1) / steps.length) * 100}%`;
+  prevButton.disabled = activeStep === 0;
+  nextButton.classList.toggle("is-hidden", activeStep === steps.length - 1);
+  submitButton.classList.toggle("is-hidden", activeStep !== steps.length - 1);
+  message.textContent = "";
+  calculateEstimate();
+}
+
+function validateCurrentStep() {
+  const inputs = [...steps[activeStep].querySelectorAll("input, select")];
+  const invalid = inputs.find((input) => !input.checkValidity());
+
+  if (invalid) {
+    invalid.reportValidity();
+    return false;
+  }
+
+  return true;
+}
+
+function getUtmData() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    utm_source: params.get("utm_source") || "",
+    utm_medium: params.get("utm_medium") || "",
+    utm_campaign: params.get("utm_campaign") || "",
+    utm_content: params.get("utm_content") || "",
+    utm_term: params.get("utm_term") || "",
+  };
+}
+
+function buildPayload() {
+  const data = Object.fromEntries(new FormData(form).entries());
+  return {
+    ...data,
+    estimate: estimateText.textContent.replace("Предварительный расчет: ", ""),
+    page: window.location.href,
+    calltracking_phone: document.querySelector(".js-calltracking-phone")?.textContent || DEFAULT_PHONE,
+    created_at: new Date().toISOString(),
+    ...getUtmData(),
+  };
+}
+
+async function sendLead(payload) {
+  // Укажите webhook CRM, например Bitrix24 или amoCRM. Без URL заявка имитируется в консоли.
+  if (!CRM_WEBHOOK_URL) {
+    console.info("Lead payload:", payload);
+    return { mocked: true };
+  }
+
+  const response = await fetch(CRM_WEBHOOK_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    throw new Error("CRM request failed");
+  }
+
+  return response.json();
+}
+
+function applyCalltracking() {
+  const params = new URLSearchParams(window.location.search);
+  const source = params.get("utm_source");
+  const medium = params.get("utm_medium");
+  const key = source === "yandex" && medium === "cpc" ? "yandex_search" : source || "direct";
+  const phone = TRACKING_PHONES[key] || DEFAULT_PHONE;
+  const phoneHref = `tel:${phone.replace(/[^\d+]/g, "")}`;
+
+  document.querySelectorAll(".js-calltracking-phone").forEach((node) => {
+    node.textContent = phone;
+    node.setAttribute("href", phoneHref);
+  });
+}
+
+prevButton.addEventListener("click", () => showStep(activeStep - 1));
+
+nextButton.addEventListener("click", () => {
+  if (validateCurrentStep()) {
+    showStep(activeStep + 1);
+  }
+});
+
+form.addEventListener("input", calculateEstimate);
+form.addEventListener("change", calculateEstimate);
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  if (!validateCurrentStep()) {
+    return;
+  }
+
+  submitButton.disabled = true;
+  submitButton.textContent = "Отправляем...";
+  message.textContent = "";
+
+  try {
+    await sendLead(buildPayload());
+    message.textContent = "Заявка отправлена. Специалист свяжется с вами в ближайшее время.";
+    form.reset();
+    showStep(0);
+  } catch (error) {
+    message.textContent = "Не удалось отправить заявку. Проверьте CRM webhook или попробуйте позже.";
+    console.error(error);
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Отправить заявку";
+  }
+});
+
+applyCalltracking();
+showStep(0);
+</file>
+
+<file path="styles.css">
+:root {
+  color-scheme: light;
+  --bg: #f6f4ef;
+  --paper: #ffffff;
+  --ink: #1d2320;
+  --muted: #65716b;
+  --line: #d8ddd6;
+  --accent: #1d7a63;
+  --accent-dark: #105846;
+  --amber: #d5942b;
+  --clay: #b45f45;
+  --blue: #376b8c;
+  --shadow: 0 22px 70px rgba(25, 38, 31, 0.16);
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.site-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px clamp(16px, 4vw, 56px);
+  background: rgba(246, 244, 239, 0.88);
+  border-bottom: 1px solid rgba(29, 35, 32, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 190px;
+}
+
+.brand__mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+}
+
+.brand strong,
+.brand small {
+  display: block;
+}
+
+.brand small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.nav a:hover,
+.header-phone:hover,
+.footer a:hover {
+  color: var(--accent-dark);
+}
+
+.header-phone {
+  white-space: nowrap;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.hero {
+  position: relative;
+  min-height: min(760px, calc(100vh - 74px));
+  overflow: hidden;
+  background: #1b2c27;
+}
+
+.hero__media,
+.hero__media img,
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  background:
+    linear-gradient(90deg, rgba(20, 31, 28, 0.9) 0%, rgba(20, 31, 28, 0.64) 48%, rgba(20, 31, 28, 0.18) 100%),
+    linear-gradient(0deg, rgba(20, 31, 28, 0.35), transparent 40%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  width: min(760px, 100%);
+  padding: clamp(72px, 12vh, 138px) clamp(16px, 5vw, 72px) 70px;
+  color: #fff;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--amber);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 720px;
+  margin-bottom: 18px;
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 21px;
+  line-height: 1.18;
+}
+
+.hero__text {
+  max-width: 640px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(17px, 2.4vw, 22px);
+}
+
+.hero__actions,
+.quiz__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 800;
+  text-align: center;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button--primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.button--primary:hover {
+  background: var(--accent-dark);
+}
+
+.button--ghost {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.button--muted {
+  border-color: var(--line);
+  background: #eef1ed;
+  color: var(--ink);
+}
+
+.button--light {
+  background: #fff;
+  color: var(--accent-dark);
+}
+
+.hero__stats {
+  display: grid;
+  max-width: 650px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 42px 0 0;
+}
+
+.hero__stats div {
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero__stats dt {
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 900;
+}
+
+.hero__stats dd {
+  margin: 2px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.trust-band {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.trust-band__item {
+  min-height: 170px;
+  padding: clamp(22px, 3vw, 38px);
+  background: var(--paper);
+}
+
+.trust-band__item span,
+.case-card span,
+.timeline__item span {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.trust-band__item strong {
+  display: block;
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.trust-band__item p,
+.section__intro p,
+.case-card p,
+.timeline__item p,
+.cta p {
+  color: var(--muted);
+}
+
+.section {
+  padding: clamp(58px, 8vw, 104px) clamp(16px, 5vw, 72px);
+}
+
+.section--split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 1.12fr);
+  gap: clamp(26px, 5vw, 72px);
+  align-items: start;
+}
+
+.section--muted {
+  background: #e9ede8;
+}
+
+.section__intro,
+.section__heading {
+  max-width: 710px;
+}
+
+.section__heading {
+  margin-bottom: 32px;
+}
+
+.check-list {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--ink);
+}
+
+.check-list li::before {
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  content: "✓";
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.quiz {
+  position: relative;
+  padding: clamp(20px, 3vw, 34px);
+  border: 1px solid rgba(29, 35, 32, 0.08);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.quiz__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.quiz__result {
+  color: var(--accent-dark);
+  font-weight: 850;
+}
+
+.progress {
+  height: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  border-radius: 999px;
+  background: #e5e9e4;
+}
+
+.progress span {
+  display: block;
+  width: 25%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), var(--amber));
+  transition: width 0.25s ease;
+}
+
+.quiz__step {
+  display: none;
+  min-height: 270px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.quiz__step.is-active {
+  display: grid;
+  gap: 14px;
+}
+
+.quiz legend {
+  width: 100%;
+  margin-bottom: 12px;
+  font-size: clamp(23px, 3vw, 32px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.option-card {
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  background: #fbfcfa;
+}
+
+.option-card:has(input:checked) {
+  border-color: var(--accent);
+  background: #edf7f3;
+}
+
+.option-card input,
+.consent input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfcfa;
+  color: var(--ink);
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--accent);
+  outline: 3px solid rgba(29, 122, 99, 0.16);
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.form-message {
+  min-height: 24px;
+  margin: 14px 0 0;
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.case-card {
+  overflow: hidden;
+  border: 1px solid rgba(29, 35, 32, 0.08);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.case-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: #d7ded6;
+}
+
+.case-card div {
+  padding: 20px;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.timeline__item {
+  padding: 24px;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: 0 14px 44px rgba(25, 38, 31, 0.08);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: clamp(42px, 6vw, 78px) clamp(16px, 5vw, 72px);
+  background: var(--accent-dark);
+  color: #fff;
+}
+
+.cta p {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 26px clamp(16px, 5vw, 72px);
+  background: #16221f;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer span {
+  margin-left: 14px;
+}
+
+@media (max-width: 940px) {
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .section--split,
+  .case-grid,
+  .trust-band {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__overlay {
+    background: linear-gradient(90deg, rgba(20, 31, 28, 0.92), rgba(20, 31, 28, 0.52));
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    padding: 12px 14px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand small,
+  .header-phone {
+    display: none;
+  }
+
+  .hero {
+    min-height: 720px;
+  }
+
+  .hero__content {
+    padding: 62px 16px 44px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .quiz__step {
+    min-height: 320px;
+  }
+
+  .footer span {
+    display: block;
+    margin: 8px 0 0;
+  }
+}
+</file>
+
+</files>

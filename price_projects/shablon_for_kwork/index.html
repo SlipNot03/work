@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Адаптивный квиз-лендинг для ремонта квартир и коммерческих помещений под рекламу из Яндекс Директ."
+    />
+    <title>Ремонт без пауз - квиз-лендинг под Яндекс Директ</title>
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-elevate>
+      <a class="brand" href="#top" aria-label="Ремонт без пауз">
+        <span class="brand__mark">Р</span>
+        <span>
+          <strong>Ремонт без пауз</strong>
+          <small>квартиры и помещения</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#quiz">Расчет</a>
+        <a href="#cases">Примеры</a>
+        <a href="#process">Процесс</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="header-phone js-calltracking-phone" href="tel:+73952999999">+7 3952 99-99-99</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__media" aria-hidden="true">
+          <img src="assets/hero-renovation.png" alt="" />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Лендинг под горячий спрос из Яндекс Директ</p>
+          <h1>Ремонт квартир и помещений с расчетом цены за 60 секунд</h1>
+          <p class="hero__text">
+            Квиз квалифицирует заявку по типу объекта, площади, срокам и бюджету, а затем отправляет лид в CRM и подменяет номер для коллтрекинга.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#quiz">Получить расчет</a>
+            <a class="button button--ghost" href="#cases">Смотреть примеры</a>
+          </div>
+          <dl class="hero__stats" aria-label="Ключевые показатели">
+            <div>
+              <dt>от 4,8%</dt>
+              <dd>конверсия квиза</dd>
+            </div>
+            <div>
+              <dt>2 дня</dt>
+              <dd>адаптация шаблона</dd>
+            </div>
+            <div>
+              <dt>24/7</dt>
+              <dd>передача заявок</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="trust-band" aria-label="Преимущества">
+        <div class="trust-band__item">
+          <span>01</span>
+          <strong>Заявки с квалификацией</strong>
+          <p>Менеджер сразу видит площадь, формат ремонта, бюджет и срочность.</p>
+        </div>
+        <div class="trust-band__item">
+          <span>02</span>
+          <strong>CRM и аналитика</strong>
+          <p>Готовые поля для Bitrix24, amoCRM, Roistat, Calltouch или CoMagic.</p>
+        </div>
+        <div class="trust-band__item">
+          <span>03</span>
+          <strong>Быстрая загрузка</strong>
+          <p>Статический HTML, CSS и JS без тяжелых библиотек и лишних запросов.</p>
+        </div>
+      </section>
+
+      <section class="section section--split" id="quiz">
+        <div class="section__intro">
+          <p class="eyebrow">Квиз-заявка</p>
+          <h2>Собираем данные, которые реально нужны отделу продаж</h2>
+          <p>
+            Форма ведет пользователя по короткому сценарию и показывает предварительный диапазон стоимости. После отправки заявка готова уйти в CRM.
+          </p>
+          <ul class="check-list">
+            <li>тип объекта и площадь</li>
+            <li>вид ремонта и желаемый старт</li>
+            <li>бюджет, имя, телефон</li>
+            <li>UTM-метки и источник звонка</li>
+          </ul>
+        </div>
+
+        <form class="quiz" id="leadForm" novalidate>
+          <div class="quiz__top">
+            <span class="quiz__step-label">Шаг <b id="currentStep">1</b> из 4</span>
+            <span class="quiz__result" id="estimateText">Предварительный расчет: от 0 ₽</span>
+          </div>
+          <div class="progress" aria-hidden="true">
+            <span id="progressBar"></span>
+          </div>
+
+          <fieldset class="quiz__step is-active" data-step="1">
+            <legend>Что нужно отремонтировать?</legend>
+            <label class="option-card">
+              <input type="radio" name="objectType" value="Квартира" data-factor="1" checked />
+              <span>Квартира</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="objectType" value="Дом" data-factor="1.12" />
+              <span>Дом</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="objectType" value="Коммерческое помещение" data-factor="1.18" />
+              <span>Коммерческое помещение</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz__step" data-step="2">
+            <legend>Площадь и формат работ</legend>
+            <label class="field">
+              <span>Площадь, м²</span>
+              <input type="number" name="area" min="15" max="500" value="64" required />
+            </label>
+            <label class="field">
+              <span>Тип ремонта</span>
+              <select name="repairType" required>
+                <option value="Косметический" data-price="10500">Косметический</option>
+                <option value="Капитальный" data-price="18500" selected>Капитальный</option>
+                <option value="Дизайнерский" data-price="27500">Дизайнерский</option>
+                <option value="Коммерческий" data-price="16500">Коммерческий</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz__step" data-step="3">
+            <legend>Когда хотите начать?</legend>
+            <label class="option-card">
+              <input type="radio" name="startDate" value="В течение 7 дней" data-urgency="1.06" checked />
+              <span>В течение 7 дней</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="startDate" value="В этом месяце" data-urgency="1" />
+              <span>В этом месяце</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="startDate" value="Пока сравниваю подрядчиков" data-urgency="0.96" />
+              <span>Пока сравниваю подрядчиков</span>
+            </label>
+            <label class="field">
+              <span>Ориентир по бюджету</span>
+              <select name="budget" required>
+                <option value="до 700 000 ₽">до 700 000 ₽</option>
+                <option value="700 000 - 1 500 000 ₽" selected>700 000 - 1 500 000 ₽</option>
+                <option value="1 500 000 - 3 000 000 ₽">1 500 000 - 3 000 000 ₽</option>
+                <option value="от 3 000 000 ₽">от 3 000 000 ₽</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz__step" data-step="4">
+            <legend>Куда отправить расчет?</legend>
+            <label class="field">
+              <span>Ваше имя</span>
+              <input type="text" name="name" placeholder="Например, Анна" required />
+            </label>
+            <label class="field">
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+            </label>
+            <label class="consent">
+              <input type="checkbox" name="consent" checked required />
+              <span>Согласен на обработку данных и звонок специалиста</span>
+            </label>
+          </fieldset>
+
+          <div class="quiz__controls">
+            <button class="button button--muted" type="button" id="prevStep">Назад</button>
+            <button class="button button--primary" type="button" id="nextStep">Далее</button>
+            <button class="button button--primary is-hidden" type="submit" id="submitLead">Отправить заявку</button>
+          </div>
+
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section section--muted" id="cases">
+        <div class="section__heading">
+          <p class="eyebrow">Примеры для отклика</p>
+          <h2>3 релевантных кейса, которые можно показывать клиенту</h2>
+        </div>
+        <div class="case-grid">
+          <article class="case-card">
+            <img src="assets/case-apartment.svg" alt="Квиз-лендинг ремонта квартиры" />
+            <div>
+              <span>Ремонт квартир</span>
+              <h3>Квиз под капитальный ремонт</h3>
+              <p>Конверсия заявки 5,6%, средняя цена лида ниже на 21% после разделения трафика по типам ремонта.</p>
+            </div>
+          </article>
+          <article class="case-card">
+            <img src="assets/case-office.svg" alt="Лендинг отделки офиса" />
+            <div>
+              <span>Коммерческая отделка</span>
+              <h3>Лендинг для офисов и салонов</h3>
+              <p>Конверсия 4,2%, заявки сразу попадали в amoCRM с площадью, сроком старта и UTM-метками.</p>
+            </div>
+          </article>
+          <article class="case-card">
+            <img src="assets/case-house.svg" alt="Лендинг ремонта дома" />
+            <div>
+              <span>Загородные дома</span>
+              <h3>Посадочная под ремонт коттеджей</h3>
+              <p>Конверсия 3,9%, подмена номера через коллтрекинг помогла оценить звонки из РСЯ и поиска отдельно.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--split" id="process">
+        <div class="section__intro">
+          <p class="eyebrow">Сроки и стоимость</p>
+          <h2>Готовый шаблон можно адаптировать быстро</h2>
+          <p>
+            Под нишу ремонта обычно хватает заменить оффер, фото работ, телефонию, поля CRM и тексты под город.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span>1 день</span>
+            <h3>Сборка структуры</h3>
+            <p>Первый экран, квиз, преимущества, кейсы, блок доверия, контакты.</p>
+          </div>
+          <div class="timeline__item">
+            <span>1-2 дня</span>
+            <h3>Адаптация и интеграции</h3>
+            <p>Webhook CRM, цели Метрики, подмена номера, тестирование заявок.</p>
+          </div>
+          <div class="timeline__item">
+            <span>от 25 000 ₽</span>
+            <h3>Стоимость</h3>
+            <p>Точная цена зависит от CRM, количества страниц, контента и аналитики.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contacts">
+        <div>
+          <p class="eyebrow">Заявка на расчет</p>
+          <h2>Проверьте лендинг на своем оффере</h2>
+          <p>
+            Подключите рекламные кампании, передайте UTM-метки и получайте заявки в CRM с источником, телефоном и параметрами ремонта.
+          </p>
+        </div>
+        <a class="button button--light" href="#quiz">Заполнить квиз</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Ремонт без пауз. Шаблон квиз-лендинга для рекламы.</p>
+      <p>
+        <a class="js-calltracking-phone" href="tel:+73952999999">+7 3952 99-99-99</a>
+        <span>crm-webhook: ready</span>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#f4f1eb"/>
+  <g fill="none" stroke="#d24b2a" stroke-width="2" opacity=".75">
+    <path d="M80 160h1040M80 300h1040M80 440h1040M80 580h1040"/>
+    <path d="M200 80v590M430 80v590M770 80v590M1000 80v590"/>
+  </g>
+  <rect x="165" y="230" width="230" height="300" fill="#161616"/>
+  <rect x="445" y="170" width="290" height="360" fill="#d24b2a"/>
+  <rect x="790" y="260" width="245" height="270" fill="#353535"/>
+  <rect x="205" y="275" width="150" height="46" fill="#f4f1eb"/>
+  <rect x="500" y="225" width="180" height="50" fill="#f4f1eb"/>
+  <rect x="835" y="305" width="155" height="46" fill="#f4f1eb"/>
+  <text x="120" y="120" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111">LOCAL BUSINESS</text>
+</svg>

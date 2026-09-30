@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ASP test</title>
+</head>
+<body>
+    <h1>Index page</h1>
+    <div id="message"></div>
+    <h2>Форма ввода</h2>
+    <div>
+        <p>Name: <input name="name" id="userName"/></p>
+        <p>Age: <input name="age" id="userAge"/></p>
+        <button id="SubmitBtn">Отправить</button>
+    </div>
+    <script>
+        document.getElementById('SubmitBtn').addEventListener('click', send);
+        async function send() {
+            const response = await fetch('/api/user', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: document.getElementById('userName').value,
+                    age: document.getElementById('userAge').value
+                })
+            });
+            const message = await response.json();
+            document.getElementById('message').innerHTML = message.text;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+PUT http://zorik.local/api/department/delete/10
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|uI2s8Ns5k5DdbnbfbE3Wjn6oFl2UYscK7dssoCPR

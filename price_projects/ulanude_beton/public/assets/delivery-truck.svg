@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Доставка газобетона</title>
+  <desc id="desc">Грузовик везет паллеты газобетонных блоков на строительный объект.</desc>
+  <rect width="1200" height="900" fill="#eef0f2"/>
+  <path d="M0 600h1200v300H0z" fill="#c0c9ce"/>
+  <path d="M80 730h1040" stroke="#2e3338" stroke-width="16" stroke-linecap="round" opacity=".45"/>
+  <g transform="translate(185 395)" stroke="#2e3338" stroke-width="10" stroke-linejoin="round">
+    <rect x="0" y="150" width="590" height="150" rx="8" fill="#f28c00"/>
+    <path d="M590 192h170l86 108H590z" fill="#ffffff"/>
+    <path d="M640 215h88l46 60H640z" fill="#d7dce0"/>
+    <rect x="40" y="42" width="120" height="54" fill="#f7f8f8"/>
+    <rect x="160" y="42" width="120" height="54" fill="#f7f8f8"/>
+    <rect x="280" y="42" width="120" height="54" fill="#f7f8f8"/>
+    <rect x="400" y="42" width="120" height="54" fill="#f7f8f8"/>
+    <rect x="40" y="96" width="120" height="54" fill="#f7f8f8"/>
+    <rect x="160" y="96" width="120" height="54" fill="#f7f8f8"/>
+    <rect x="280" y="96" width="120" height="54" fill="#f7f8f8"/>
+    <rect x="400" y="96" width="120" height="54" fill="#f7f8f8"/>
+    <circle cx="145" cy="320" r="48" fill="#2e3338"/>
+    <circle cx="650" cy="320" r="48" fill="#2e3338"/>
+    <circle cx="145" cy="320" r="20" fill="#d7dce0"/>
+    <circle cx="650" cy="320" r="20" fill="#d7dce0"/>
+  </g>
+  <g fill="#839199" opacity=".45">
+    <rect x="82" y="300" width="115" height="280"/>
+    <rect x="944" y="250" width="160" height="330"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#f5f1eb"/>
+  <rect x="155" y="160" width="170" height="420" fill="#111"/>
+  <rect x="360" y="120" width="170" height="460" fill="#d24b2a"/>
+  <rect x="565" y="190" width="170" height="390" fill="#222"/>
+  <rect x="770" y="145" width="170" height="435" fill="#444"/>
+  <g stroke="#f5f1eb" stroke-width="8">
+    <path d="M185 235h110M185 320h110M185 405h110"/>
+    <path d="M390 220h110M390 305h110M390 390h110"/>
+    <path d="M595 280h110M595 365h110M595 450h110"/>
+    <path d="M800 235h110M800 320h110M800 405h110"/>
+  </g>
+  <circle cx="1000" cy="205" r="55" fill="#d24b2a" opacity=".8"/>
+  <text x="120" y="680" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111">EVENING LIBRARY</text>
+</svg>

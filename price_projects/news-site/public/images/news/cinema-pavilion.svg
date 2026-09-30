@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#f1eee8"/>
+  <rect x="120" y="130" width="960" height="500" fill="#161616"/>
+  <path d="M190 200h820v360H190z" fill="#f1eee8"/>
+  <path d="M220 230h760v300H220z" fill="#d24b2a" opacity=".18"/>
+  <circle cx="420" cy="380" r="118" fill="#111"/>
+  <circle cx="780" cy="380" r="118" fill="#111"/>
+  <circle cx="420" cy="380" r="55" fill="#f1eee8"/>
+  <circle cx="780" cy="380" r="55" fill="#f1eee8"/>
+  <path d="M520 380h160" stroke="#d24b2a" stroke-width="24"/>
+  <text x="155" y="100" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111">OPEN AIR CINEMA</text>
+</svg>

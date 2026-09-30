@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SON Assistant</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="sidebar" aria-label="Диалоги">
+        <div class="brand">
+          <div class="mark">S</div>
+          <div>
+            <h1>SON</h1>
+            <p id="mode">...</p>
+          </div>
+        </div>
+        <button id="new-chat" class="secondary" type="button">Новый диалог</button>
+        <div id="conversation-list" class="conversation-list"></div>
+
+        <section class="documents-panel" aria-label="Заметки">
+          <div class="panel-heading">
+            <h2>Заметки</h2>
+            <button id="reindex" class="icon-button" type="button" title="Обновить индекс">
+              ↻
+            </button>
+          </div>
+          <form id="search-form" class="search-form">
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Поиск по заметкам"
+              autocomplete="off"
+            />
+            <button id="search" type="submit">Найти</button>
+          </form>
+          <label class="toggle">
+            <input id="use-documents" type="checkbox" checked />
+            <span>Использовать в ответах</span>
+          </label>
+          <div id="document-status" class="document-status"></div>
+          <div id="search-results" class="search-results"></div>
+        </section>
+      </aside>
+
+      <section class="chat" aria-label="Чат">
+        <header class="chat-header">
+          <div>
+            <h2 id="conversation-title">Текстовый ассистент</h2>
+            <p>v0.2</p>
+          </div>
+        </header>
+
+        <div id="messages" class="messages"></div>
+
+        <form id="chat-form" class="composer">
+          <textarea
+            id="message-input"
+            name="message"
+            rows="1"
+            placeholder="Напишите сообщение..."
+            autocomplete="off"
+          ></textarea>
+          <button id="send" type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/assets/app.js"></script>
+  </body>
+</html>

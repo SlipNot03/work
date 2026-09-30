@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#efede7"/>
+  <path d="M0 355h1200M585 0v750" stroke="#111" stroke-width="96"/>
+  <path d="M0 355h1200M585 0v750" stroke="#efede7" stroke-width="8" stroke-dasharray="38 32"/>
+  <circle cx="585" cy="355" r="110" fill="none" stroke="#d24b2a" stroke-width="18"/>
+  <rect x="790" y="120" width="150" height="90" fill="#d24b2a"/>
+  <rect x="250" y="505" width="150" height="90" fill="#d24b2a"/>
+  <text x="80" y="100" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111">SMART CROSSROADS</text>
+</svg>

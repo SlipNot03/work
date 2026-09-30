@@ -1,0 +1,14 @@
+@echo off
+chcp 65001 >nul
+cd /d "%~dp0"
+
+if not exist ".venv\Scripts\python.exe" (
+    echo Virtual environment not found. Run setup_windows.bat first.
+    pause
+    exit /b 1
+)
+
+call ".venv\Scripts\activate.bat"
+python Dementyeva_va_heated.py
+python Dementyeva_va_unheated.py
+pause

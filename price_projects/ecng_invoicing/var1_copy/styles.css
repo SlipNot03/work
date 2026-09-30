@@ -1,0 +1,35 @@
+/* Включаем 3D перспективу для карточек */
+.problem-card, .benefit-card, .audience-card, .step-card {
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease-out, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+/* Легкий блик, который будет двигаться при наклоне */
+.glass-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.12), transparent 60%);
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.glass-card:hover::after {
+    opacity: 1;
+}
+
+/* Стаггер для заголовков (класс добавим через JS) */
+.stagger-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger-word.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

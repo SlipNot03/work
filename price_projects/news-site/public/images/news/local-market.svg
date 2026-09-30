@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#f4f1eb"/>
+  <path d="M250 245h700l-65 350H315z" fill="#111"/>
+  <path d="M335 245c20-110 75-165 165-165s145 55 165 165" fill="none" stroke="#d24b2a" stroke-width="28" stroke-linecap="round"/>
+  <path d="M535 245c20-110 75-165 165-165s145 55 165 165" fill="none" stroke="#d24b2a" stroke-width="28" stroke-linecap="round" opacity=".6"/>
+  <rect x="380" y="340" width="430" height="82" fill="#f4f1eb"/>
+  <text x="410" y="397" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111">LOCAL</text>
+  <text x="120" y="690" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111">MARKETPLACE</text>
+</svg>

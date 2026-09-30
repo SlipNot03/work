@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#f2efe9"/>
+  <circle cx="965" cy="150" r="85" fill="#d24b2a"/>
+  <path d="M110 610c120-120 210-120 330-20s230 100 370-60 210-190 310-105" fill="none" stroke="#111" stroke-width="24" stroke-linecap="round"/>
+  <path d="M220 520c20-110 86-170 180-190 88 20 148 80 170 190" fill="none" stroke="#d24b2a" stroke-width="24" stroke-linecap="round"/>
+  <path d="M400 330v250" stroke="#111" stroke-width="16" stroke-linecap="round"/>
+  <path d="M720 455c45-95 115-145 210-150 45 72 42 145-10 220" fill="none" stroke="#d24b2a" stroke-width="24" stroke-linecap="round"/>
+  <text x="90" y="115" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111">COOL ROUTES</text>
+</svg>

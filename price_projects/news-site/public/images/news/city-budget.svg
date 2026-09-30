@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#f2efe9"/>
+  <rect x="150" y="120" width="900" height="520" fill="#fffaf2" stroke="#111" stroke-width="6"/>
+  <path d="M150 230h900M150 340h900M150 450h900M150 560h900" stroke="#d24b2a" stroke-width="3"/>
+  <path d="M375 120v520M625 120v520M850 120v520" stroke="#111" stroke-width="3"/>
+  <path d="M220 510h90V395h90v-80h90v140h90V285h90v215h90V250h90v260h90" fill="none" stroke="#111" stroke-width="20" stroke-linejoin="round"/>
+  <text x="190" y="90" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#111">CITY BUDGET</text>
+</svg>

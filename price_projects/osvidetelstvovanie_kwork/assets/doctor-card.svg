@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" role="img" aria-label="Врач клиники">
+  <rect width="520" height="420" rx="24" fill="#d9edf9"/>
+  <rect x="58" y="46" width="404" height="328" rx="22" fill="#ffffff"/>
+  <circle cx="260" cy="146" r="68" fill="#b7d4ea"/>
+  <path d="M142 328c15-78 64-118 118-118s103 40 118 118" fill="#88b8db"/>
+  <path d="M175 324h170v50H175z" fill="#ffffff" opacity=".75"/>
+  <path d="M198 320l38-88h48l38 88" fill="#f5fbff"/>
+  <path d="M239 234l21 28 21-28" fill="#d7e9f6"/>
+  <circle cx="228" cy="146" r="7" fill="#15365c"/>
+  <circle cx="292" cy="146" r="7" fill="#15365c"/>
+  <path d="M238 178c18 12 35 12 50 0" fill="none" stroke="#15365c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M190 101c18-52 120-58 148 6-42-13-88-13-148-6z" fill="#15365c"/>
+</svg>

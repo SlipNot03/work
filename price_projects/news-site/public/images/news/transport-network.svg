@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#f3f0ea"/>
+  <path d="M0 610h1200" stroke="#d24b2a" stroke-width="4"/>
+  <path d="M120 570c160-210 290-250 430-120s295 130 530-130" fill="none" stroke="#161616" stroke-width="28" stroke-linecap="round"/>
+  <path d="M120 570c160-210 290-250 430-120s295 130 530-130" fill="none" stroke="#f3f0ea" stroke-width="6" stroke-dasharray="28 24"/>
+  <circle cx="245" cy="470" r="48" fill="#d24b2a"/>
+  <circle cx="560" cy="455" r="48" fill="#111"/>
+  <circle cx="910" cy="360" r="48" fill="#d24b2a"/>
+  <text x="80" y="120" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#111">CITY ROUTES</text>
+</svg>

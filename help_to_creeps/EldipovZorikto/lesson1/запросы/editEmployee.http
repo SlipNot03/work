@@ -1,0 +1,6 @@
+PUT http://zorik.local/api/employee/edit
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|uI2s8Ns5k5DdbnbfbE3Wjn6oFl2UYscK7dssoCPR
+
+{"id" : 11, "surname" : "влава", "name" : "вова", "department_id" : 1}

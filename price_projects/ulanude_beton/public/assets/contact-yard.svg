@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Контакты склада газобетона</title>
+  <desc id="desc">Офис продаж рядом со складом газобетона.</desc>
+  <rect width="1200" height="900" fill="#dceaf0"/>
+  <path d="M0 610h1200v290H0z" fill="#c6cfd4"/>
+  <g stroke="#2e3338" stroke-width="10" stroke-linejoin="round">
+    <path d="M158 330h420v330H158z" fill="#ffffff"/>
+    <path d="M130 330l238-150 238 150z" fill="#f28c00"/>
+    <rect x="240" y="455" width="110" height="205" fill="#d7dce0"/>
+    <rect x="405" y="430" width="98" height="82" fill="#d7dce0"/>
+    <path d="M690 420h270v208H690z" fill="#ffffff"/>
+    <rect x="716" y="454" width="218" height="52" fill="#eef0f2"/>
+    <rect x="716" y="530" width="218" height="52" fill="#eef0f2"/>
+  </g>
+  <g fill="#eef0f2" stroke="#2e3338" stroke-width="7">
+    <rect x="720" y="655" width="88" height="48"/>
+    <rect x="808" y="655" width="88" height="48"/>
+    <rect x="896" y="655" width="88" height="48"/>
+  </g>
+  <g fill="#f28c00">
+    <rect x="735" y="250" width="320" height="62" rx="8"/>
+    <circle cx="780" cy="281" r="18" fill="#fff"/>
+  </g>
+  <text x="835" y="294" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#fff">ЗАЯВКИ</text>
+</svg>

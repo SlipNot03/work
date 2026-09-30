@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Кейс коммерческой отделки">
+  <rect width="640" height="400" fill="#dfe8de"/>
+  <rect x="58" y="58" width="524" height="236" rx="8" fill="#ffffff"/>
+  <path d="M58 294h524v58H58z" fill="#376b8c"/>
+  <rect x="96" y="92" width="140" height="140" fill="#b7d7dc"/>
+  <rect x="270" y="92" width="274" height="28" fill="#1d7a63"/>
+  <rect x="270" y="148" width="226" height="18" fill="#cad5cf"/>
+  <rect x="270" y="184" width="244" height="18" fill="#cad5cf"/>
+  <rect x="270" y="230" width="128" height="42" rx="8" fill="#b45f45"/>
+  <path d="M84 352h472" stroke="#1d2320" stroke-width="8" opacity=".16"/>
+</svg>
